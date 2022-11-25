@@ -7,6 +7,7 @@
 
 alias ls='ls --color=auto'
 alias vi=nvim
+alias pamcan=pacman
 
 # -- Rust
 export CARGO_HOME=$HOME/.config/cargo
