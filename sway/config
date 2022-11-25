@@ -32,7 +32,7 @@ output * bg wallpaper.png fill
 #
 # Example configuration:
 #
-exec sh $HOME/.config/sway/sh/autolock.sh
+exec sh sh/autolock.sh
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -63,7 +63,7 @@ exec sh $HOME/.config/sway/sh/autolock.sh
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec sh $HOME/.config/sway/sh/bemenu-run.sh
+    bindsym $mod+d exec sh sh/bemenu-run.sh
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -76,10 +76,10 @@ exec sh $HOME/.config/sway/sh/autolock.sh
     bindsym $mod+Shift+c reload
 
     # Lock session
-    bindsym control+alt+l exec sh $HOME/.config/sway/sh/lock.sh
+    bindsym control+alt+l exec sh sh/lock.sh
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym control+alt+delete exec sh $HOME/.config/sway/sh/session.sh
+    bindsym control+alt+delete exec sh sh/session.sh
 #
 # Moving around:
 #
@@ -203,7 +203,7 @@ bar {
     position top
     font Fira Sans Bold 9
 
-    status_command sh $HOME/.config/sway/sh/statusline.sh
+    status_command sh sh/statusline.sh
 
     colors {
         statusline #ffffff
@@ -213,4 +213,4 @@ bar {
     }
 }
 
-include $HOME/.config/sway/config.d/*
+include config.d/*
